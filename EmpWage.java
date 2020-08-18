@@ -7,6 +7,7 @@ public class EmpWage {
 		int Full_Day_Hours = 8;
 		int Is_Full_Time=1;
 		int Part_Time_Hours=4;
+		int Working_Days_Per_Month=20;
 		
 		int dailyFullTimeWage=Wage_Per_Hour*Full_Day_Hours;
 		int dailyPartTimeWage=Wage_Per_Hour*Part_Time_Hours;
@@ -17,7 +18,9 @@ public class EmpWage {
 		{
 		case 1: System.out.println("Employee is present");
 		System.out.println("Daily wage of full time employee is "+dailyFullTimeWage);
+		System.out.println("Monthly wage of full time employee is "+Working_Days_Per_Month*dailyFullTimeWage);
 		System.out.println("Daily wage of part time employee is "+dailyPartTimeWage);
+		System.out.println("Monthly wages of part time employee is "+Working_Days_Per_Month*dailyPartTimeWage);
 		break;
 		case 0: System.out.println("Employee is absent");
 		System.out.println("Enmployee is not present");
