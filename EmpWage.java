@@ -14,8 +14,8 @@ public class EmpWage {
 	public static void main(String[] args) 
 	{
 				
-		calcPartTimeWage();
-		calcFullTimeWage();
+		computePartTimeWage();
+		computeFullTimeWage();
 				
 	}
 	
@@ -25,7 +25,7 @@ public class EmpWage {
 	}
 
 	
-	static void calcPartTimeWage()
+	static void computePartTimeWage()
 	{
 		int workHrsPartTime=0;
 		int daysOfMonth=0;
@@ -47,7 +47,7 @@ public class EmpWage {
 		System.out.println("This month part time employee worked " +workHrsPartTime+" hours and earned "+workHrsPartTime*Wage_Per_Hour+" Rupees" );
 	}
 	
-	static void calcFullTimeWage()
+	static void computeFullTimeWage()
 	{
 
 		int workHrsFullTime=0;
